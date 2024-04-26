@@ -1,6 +1,10 @@
 import React from "react";
 import "./Card.css";
 
+import home from "../assets/ihome-100.png";
+import sport from "../assets/isport-100.png";
+import work from "../assets/iwork-100.png";
+
 function Card() {
   return (
     <section>
@@ -14,7 +18,7 @@ function Card() {
         </div>
       </div>
       <div className="category">
-        <img src="" alt="alt de l'image" />
+        <img src={work} alt="alt de l'image" />
         <p>Category</p>
       </div>
       <div className="deadline">
