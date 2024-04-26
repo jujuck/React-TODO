@@ -2,7 +2,3 @@ section.todo-filter {
   display: flex;
   justify-content: space-around;
 }
-
-header {
-  color: white;
-}
