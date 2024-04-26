@@ -2,7 +2,10 @@ import "./App.css";
 import Filters from "./components/Filters";
 import Header from "./components/Header";
 
+import data from "./assets/data/data";
+
 function App() {
+  console.log(data);
   return (
     <>
       <Header />
