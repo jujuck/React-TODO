@@ -5,24 +5,25 @@ import home from "../assets/ihome-100.png";
 import sport from "../assets/isport-100.png";
 import work from "../assets/iwork-100.png";
 
-function Card() {
+function Card(props) {
+  console.log(props);
   return (
     <section>
       <div className="status">
-        <h4>Status</h4>
+        <h4>{props.todo.status}</h4>
       </div>
       <div className="description">
-        <h3>Mon titre H3</h3>
+        <h3>{props.todo.description}</h3>
         <div>
           <button>Modifié </button>
         </div>
       </div>
       <div className="category">
         <img src={work} alt="alt de l'image" />
-        <p>Category</p>
+        <p>{props.todo.category}</p>
       </div>
       <div className="deadline">
-        <p>DeadLine</p>
+        <p>{props.todo.deadline}</p>
       </div>
       <div className="trash">
         <img

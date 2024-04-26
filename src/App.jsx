@@ -11,7 +11,7 @@ function App() {
     <>
       <Header />
       <Filters />
-      <Card />
+      <Card todo={data[0]} />
     </>
   );
 }
