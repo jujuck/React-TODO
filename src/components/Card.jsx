@@ -5,8 +5,15 @@ import home from "../assets/ihome-100.png";
 import sport from "../assets/isport-100.png";
 import work from "../assets/iwork-100.png";
 
+const category = {
+  maison: home,
+  boulot: work,
+  sport: sport,
+};
+
 function Card(props) {
-  console.log(props);
+  const image = props.todo.category;
+
   return (
     <section>
       <div className="status">
@@ -19,7 +26,7 @@ function Card(props) {
         </div>
       </div>
       <div className="category">
-        <img src={work} alt="alt de l'image" />
+        <img src={category[image]} alt="alt de l'image" />
         <p>{props.todo.category}</p>
       </div>
       <div className="deadline">
