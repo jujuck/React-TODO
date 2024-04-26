@@ -1,7 +1,15 @@
 import React from "react";
+import logo from "../assets/todo.png";
 
 function Header() {
-  return <div>Header</div>;
+  return (
+    <header>
+      <img src={logo} alt="logo de ma to do list" />
+      <div>
+        <h1>LISTE à faire</h1>
+      </div>
+    </header>
+  );
 }
 
 export default Header;
