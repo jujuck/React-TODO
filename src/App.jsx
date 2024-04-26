@@ -3,6 +3,7 @@ import Filters from "./components/Filters";
 import Header from "./components/Header";
 
 import data from "./assets/data/data";
+import Card from "./components/Card";
 
 function App() {
   console.log(data);
@@ -10,7 +11,7 @@ function App() {
     <>
       <Header />
       <Filters />
-      <h1>Ma liste To do</h1>
+      <Card />
     </>
   );
 }
